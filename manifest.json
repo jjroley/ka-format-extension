@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "name": "Code Formatter for KA",
+  "author": "Jonathan Roley",
+  "icons": {
+    "16": "img/logo-16.png",
+    "48": "img/logo-48.png",
+    "128": "img/logo-128.png"
+  },
+  "content_scripts": [{
+		"js": ["inject.js"],
+    "css": ["styles.css"],
+		"matches": ["*://*.khanacademy.org/*"],
+		"run_at" : "document_end"
+	}],
+  "web_accessible_resources": [{
+    "resources": ["script.js","lib/*"],
+    "matches": ["*://*.khanacademy.org/*"]
+  }]
+}
