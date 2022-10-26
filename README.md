@@ -1,4 +1,4 @@
-# Code formatting extsion for Khan Academy
+# Code formatting extension for Khan Academy
 
 ### How to use:
 1. Download this repo as zip file
